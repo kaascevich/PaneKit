@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34834DDA29EB5B0400EFE140 /* PaneKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 34834DD929EB5B0400EFE140 /* PaneKit.docc */; };
 		34834DE029EB5B0400EFE140 /* PaneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34834DD529EB5B0400EFE140 /* PaneKit.framework */; };
 		34834DE529EB5B0400EFE140 /* PaneKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DE429EB5B0400EFE140 /* PaneKitTests.swift */; };
 		34834DE629EB5B0400EFE140 /* PaneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 34834DD829EB5B0400EFE140 /* PaneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34834DF029EB5BFA00EFE140 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 34834DEF29EB5BFA00EFE140 /* README.md */; };
+		34834DF929EB5C1C00EFE140 /* PaneKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF129EB5C1C00EFE140 /* PaneKit.docc */; };
+		34834DFA29EB5C1C00EFE140 /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF429EB5C1C00EFE140 /* Pane.swift */; };
+		34834DFB29EB5C1C00EFE140 /* PaneCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF529EB5C1C00EFE140 /* PaneCategory.swift */; };
+		34834DFC29EB5C1C00EFE140 /* PaneControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF729EB5C1C00EFE140 /* PaneControl.swift */; };
+		34834DFD29EB5C1C00EFE140 /* PaneMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +31,14 @@
 /* Begin PBXFileReference section */
 		34834DD529EB5B0400EFE140 /* PaneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34834DD829EB5B0400EFE140 /* PaneKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaneKit.h; sourceTree = "<group>"; };
-		34834DD929EB5B0400EFE140 /* PaneKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PaneKit.docc; sourceTree = "<group>"; };
 		34834DDF29EB5B0400EFE140 /* PaneKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaneKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34834DE429EB5B0400EFE140 /* PaneKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKitTests.swift; sourceTree = "<group>"; };
+		34834DEF29EB5BFA00EFE140 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		34834DF129EB5C1C00EFE140 /* PaneKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PaneKit.docc; sourceTree = "<group>"; };
+		34834DF429EB5C1C00EFE140 /* Pane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pane.swift; sourceTree = "<group>"; };
+		34834DF529EB5C1C00EFE140 /* PaneCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneCategory.swift; sourceTree = "<group>"; };
+		34834DF729EB5C1C00EFE140 /* PaneControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneControl.swift; sourceTree = "<group>"; };
+		34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 		34834DCB29EB5B0400EFE140 = {
 			isa = PBXGroup;
 			children = (
+				34834DEF29EB5BFA00EFE140 /* README.md */,
 				34834DD729EB5B0400EFE140 /* PaneKit */,
 				34834DE329EB5B0400EFE140 /* PaneKitTests */,
 				34834DD629EB5B0400EFE140 /* Products */,
@@ -72,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				34834DD829EB5B0400EFE140 /* PaneKit.h */,
-				34834DD929EB5B0400EFE140 /* PaneKit.docc */,
+				34834DF329EB5C1C00EFE140 /* Sources */,
+				34834DFE29EB5C2E00EFE140 /* Resources */,
 			);
 			path = PaneKit;
 			sourceTree = "<group>";
@@ -83,6 +95,41 @@
 				34834DE429EB5B0400EFE140 /* PaneKitTests.swift */,
 			);
 			path = PaneKitTests;
+			sourceTree = "<group>";
+		};
+		34834DF329EB5C1C00EFE140 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				34834DFF29EB5C5B00EFE140 /* Panes */,
+				34834DF629EB5C1C00EFE140 /* Controls */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		34834DF629EB5C1C00EFE140 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				34834DF729EB5C1C00EFE140 /* PaneControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		34834DFE29EB5C2E00EFE140 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34834DF129EB5C1C00EFE140 /* PaneKit.docc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		34834DFF29EB5C5B00EFE140 /* Panes */ = {
+			isa = PBXGroup;
+			children = (
+				34834DF429EB5C1C00EFE140 /* Pane.swift */,
+				34834DF529EB5C1C00EFE140 /* PaneCategory.swift */,
+				34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */,
+			);
+			path = Panes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34834DF029EB5BFA00EFE140 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34834DDA29EB5B0400EFE140 /* PaneKit.docc in Sources */,
+				34834DFB29EB5C1C00EFE140 /* PaneCategory.swift in Sources */,
+				34834DFC29EB5C1C00EFE140 /* PaneControl.swift in Sources */,
+				34834DFD29EB5C1C00EFE140 /* PaneMetadata.swift in Sources */,
+				34834DF929EB5C1C00EFE140 /* PaneKit.docc in Sources */,
+				34834DFA29EB5C1C00EFE140 /* Pane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +453,7 @@
 		34834DED29EB5B0400EFE140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z3G8V4ANYY;
@@ -416,6 +469,7 @@
 		34834DEE29EB5B0400EFE140 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z3G8V4ANYY;
