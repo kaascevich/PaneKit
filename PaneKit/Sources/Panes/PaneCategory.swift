@@ -7,13 +7,18 @@
 
 import Foundation
 
-/// Represents a category of panes.
-public struct PaneCategory: Codable {
+/// A category for organizing panes.
+public struct PaneCategory: Codable, Identifiable {
+    
+    // MARK: - Properties
+    
     /// The name of this category.
     public var name: String
     
     /// The name of the SF symbol to use as this category's icon.
     public var icon: String?
+    
+    // MARK: - Nested Types
     
     /// The default categories included with the app.
     public struct DefaultCategory: Codable {
@@ -28,6 +33,8 @@ public struct PaneCategory: Codable {
         public static let apps = PaneCategory("Apps", systemImage: "app.badge")
     }
     
+    // MARK: - Initializers
+    
     /// Creates a category.
     ///
     /// - Parameters:
@@ -37,4 +44,8 @@ public struct PaneCategory: Codable {
         self.name = name
         self.icon = systemImage
     }
+    
+    // MARK: - Identifiable Conformance
+    
+    public var id = UUID()
 }

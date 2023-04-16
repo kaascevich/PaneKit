@@ -9,14 +9,19 @@ import Foundation
 
 /// Represents metadata for panes.
 public struct PaneMetadata: Codable {
+    
+    // MARK: - Properties
+    
     /// The name of this pane.
     public var name: String
     
     /// The name of the SF symbol to use as this pane's icon.
-    public var systemImage: String
+    public var icon: String
     
     /// The category this pane belongs in.
     public var category: PaneCategory?
+    
+    // MARK: - Initializers
     
     /// Creates a metadata object.
     ///
@@ -26,7 +31,7 @@ public struct PaneMetadata: Codable {
     ///   - category: The category this pane belongs in.
     public init(_ name: String, systemImage: String, category: PaneCategory? = nil) {
         self.name = name
-        self.systemImage = systemImage
+        self.icon = systemImage
         self.category = category
     }
 }

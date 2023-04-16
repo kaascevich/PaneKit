@@ -7,10 +7,15 @@
 
 import Foundation
 
-/// Represents a defaults pane.
-public struct Pane: Codable {
+/// Represents a pane.
+public struct Pane: Codable, Identifiable {
+    
+    // MARK: - Properties
+    
     /// The metadata for this pane.
     public var metadata: PaneMetadata
+    
+    // MARK: - Initializers
     
     /// Creates a pane using a metadata object.
     ///
@@ -19,4 +24,7 @@ public struct Pane: Codable {
     public init(_ metadata: PaneMetadata) {
         self.metadata = metadata
     }
+    
+    // MARK: - Identifiable Conformance
+    public var id = UUID()
 }
