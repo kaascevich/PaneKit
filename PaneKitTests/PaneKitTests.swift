@@ -30,8 +30,26 @@ final class PaneKitTests: XCTestCase {
 // MARK: - Constants
 
 let testPane = {
-    let category = PaneCategory("Mac", systemImage: "laptopcomputer")
-    let metadata = PaneMetadata("General", systemImage: "gearshape", category: category)
-    let pane = Pane(metadata)
+    let category = PKCategory("Mac", icon: "laptopcomputer")
+    let metadata = PKMetadata("General", icon: "gearshape", category: category)
+    let pane = PKPane(metadata)
     return pane
 }()
+
+// MARK: - Structures
+
+class TestControl: PKControl {
+    typealias ControlType = TestControlType
+    
+    var name: String
+    
+    required init(_ name: String) {
+        self.name = name
+    }
+}
+
+class TestControlType: PKControlType {
+    typealias PreferenceType = Bool
+    
+    static let name = "Test Control Type"
+}

@@ -12,10 +12,12 @@
 		34834DE629EB5B0400EFE140 /* PaneKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 34834DD829EB5B0400EFE140 /* PaneKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34834DF029EB5BFA00EFE140 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 34834DEF29EB5BFA00EFE140 /* README.md */; };
 		34834DF929EB5C1C00EFE140 /* PaneKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF129EB5C1C00EFE140 /* PaneKit.docc */; };
-		34834DFA29EB5C1C00EFE140 /* Pane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF429EB5C1C00EFE140 /* Pane.swift */; };
-		34834DFB29EB5C1C00EFE140 /* PaneCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF529EB5C1C00EFE140 /* PaneCategory.swift */; };
-		34834DFC29EB5C1C00EFE140 /* PaneControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF729EB5C1C00EFE140 /* PaneControl.swift */; };
-		34834DFD29EB5C1C00EFE140 /* PaneMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */; };
+		34834DFA29EB5C1C00EFE140 /* PKPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF429EB5C1C00EFE140 /* PKPane.swift */; };
+		34834DFB29EB5C1C00EFE140 /* PKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF529EB5C1C00EFE140 /* PKCategory.swift */; };
+		34834DFC29EB5C1C00EFE140 /* PKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF729EB5C1C00EFE140 /* PKControl.swift */; };
+		34834DFD29EB5C1C00EFE140 /* PKMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34834DF829EB5C1C00EFE140 /* PKMetadata.swift */; };
+		34B4C74529F5A4530048E592 /* PKControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B4C74429F5A4530048E592 /* PKControlType.swift */; };
+		34BDBC6B29F5F4080042C24A /* PKBoolControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BDBC6A29F5F4080042C24A /* PKBoolControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,12 @@
 		34834DE429EB5B0400EFE140 /* PaneKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaneKitTests.swift; sourceTree = "<group>"; };
 		34834DEF29EB5BFA00EFE140 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34834DF129EB5C1C00EFE140 /* PaneKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PaneKit.docc; sourceTree = "<group>"; };
-		34834DF429EB5C1C00EFE140 /* Pane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pane.swift; sourceTree = "<group>"; };
-		34834DF529EB5C1C00EFE140 /* PaneCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneCategory.swift; sourceTree = "<group>"; };
-		34834DF729EB5C1C00EFE140 /* PaneControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneControl.swift; sourceTree = "<group>"; };
-		34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaneMetadata.swift; sourceTree = "<group>"; };
+		34834DF429EB5C1C00EFE140 /* PKPane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKPane.swift; sourceTree = "<group>"; };
+		34834DF529EB5C1C00EFE140 /* PKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCategory.swift; sourceTree = "<group>"; };
+		34834DF729EB5C1C00EFE140 /* PKControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKControl.swift; sourceTree = "<group>"; };
+		34834DF829EB5C1C00EFE140 /* PKMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKMetadata.swift; sourceTree = "<group>"; };
+		34B4C74429F5A4530048E592 /* PKControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKControlType.swift; sourceTree = "<group>"; };
+		34BDBC6A29F5F4080042C24A /* PKBoolControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKBoolControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				34834DFF29EB5C5B00EFE140 /* Panes */,
-				34834DF629EB5C1C00EFE140 /* Controls */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,7 +112,9 @@
 		34834DF629EB5C1C00EFE140 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				34834DF729EB5C1C00EFE140 /* PaneControl.swift */,
+				34B4C74429F5A4530048E592 /* PKControlType.swift */,
+				34834DF729EB5C1C00EFE140 /* PKControl.swift */,
+				34BDBC6929F5F3F70042C24A /* Default */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -125,11 +130,20 @@
 		34834DFF29EB5C5B00EFE140 /* Panes */ = {
 			isa = PBXGroup;
 			children = (
-				34834DF429EB5C1C00EFE140 /* Pane.swift */,
-				34834DF529EB5C1C00EFE140 /* PaneCategory.swift */,
-				34834DF829EB5C1C00EFE140 /* PaneMetadata.swift */,
+				34834DF429EB5C1C00EFE140 /* PKPane.swift */,
+				34834DF829EB5C1C00EFE140 /* PKMetadata.swift */,
+				34834DF529EB5C1C00EFE140 /* PKCategory.swift */,
+				34834DF629EB5C1C00EFE140 /* Controls */,
 			);
 			path = Panes;
+			sourceTree = "<group>";
+		};
+		34BDBC6929F5F3F70042C24A /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				34BDBC6A29F5F4080042C24A /* PKBoolControl.swift */,
+			);
+			path = Default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,11 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34834DFB29EB5C1C00EFE140 /* PaneCategory.swift in Sources */,
-				34834DFC29EB5C1C00EFE140 /* PaneControl.swift in Sources */,
-				34834DFD29EB5C1C00EFE140 /* PaneMetadata.swift in Sources */,
+				34834DFB29EB5C1C00EFE140 /* PKCategory.swift in Sources */,
+				34834DFC29EB5C1C00EFE140 /* PKControl.swift in Sources */,
+				34834DFD29EB5C1C00EFE140 /* PKMetadata.swift in Sources */,
 				34834DF929EB5C1C00EFE140 /* PaneKit.docc in Sources */,
-				34834DFA29EB5C1C00EFE140 /* Pane.swift in Sources */,
+				34B4C74529F5A4530048E592 /* PKControlType.swift in Sources */,
+				34BDBC6B29F5F4080042C24A /* PKBoolControl.swift in Sources */,
+				34834DFA29EB5C1C00EFE140 /* PKPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
