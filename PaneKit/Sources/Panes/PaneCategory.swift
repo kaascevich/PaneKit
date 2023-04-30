@@ -1,5 +1,5 @@
 //
-//  PKCategory.swift
+//  PaneCategory.swift
 //  PaneKit
 //
 //  Created by Kaleb on 4/15/23.
@@ -8,7 +8,7 @@
 import Foundation
 
 /// A category for organizing panes.
-public struct PKCategory: Codable, Identifiable {
+public struct PaneCategory: Codable, Identifiable {
     // MARK: - Properties
     
     /// The name of this category.

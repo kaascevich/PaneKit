@@ -9,6 +9,11 @@ import XCTest
 @testable import PaneKit
 
 final class PaneKitTests: XCTestCase {
+    let plistEncoder = {
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+        return encoder
+    }()
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,35 +26,27 @@ final class PaneKitTests: XCTestCase {
     // MARK: - Pane Encoding and Decoding
     
     func testPaneEncoding() throws {
-        let encoder = PropertyListEncoder()
-        encoder.outputFormat = .xml
-        FileManager.default.createFile(atPath: "Users/kaleb/Desktop/TestPane.plist", contents: try encoder.encode(testPane))
+        let encoded = try plistEncoder.encode(testPane)
+        let string = String(data: encoded, encoding: .ascii)
+        print(string!)
+    }
+    
+    // MARK: - Control Encoding and Decoding
+    
+    func testControlEncoding() throws {
+        let encoded = try plistEncoder.encode(testControl)
+        let string = String(data: encoded, encoding: .ascii)
+        print(string!)
     }
 }
 
-// MARK: - Constants
+// MARK: - Panes
 
-let testPane = {
-    let category = PKCategory("Mac", icon: "laptopcomputer")
-    let metadata = PKMetadata("General", icon: "gearshape", category: category)
-    let pane = PKPane(metadata)
-    return pane
-}()
+let testCategory = PaneCategory("Mac", icon: "laptopcomputer")
+let testMetadata = PaneMetadata("General", icon: "gearshape", category: testCategory)
+let testPane = Pane(testMetadata)
 
-// MARK: - Structures
+// MARK: - Controls
 
-class TestControl: PKControl {
-    typealias ControlType = TestControlType
-    
-    var name: String
-    
-    required init(_ name: String) {
-        self.name = name
-    }
-}
-
-class TestControlType: PKControlType {
-    typealias PreferenceType = Bool
-    
-    static let name = "Test Control Type"
-}
+let testPreference = Preference<IntegerPreferenceType>("Test", in: .global, key: "testKey")
+let testControl = Control<IntegerPreferenceType>(testPreference)
